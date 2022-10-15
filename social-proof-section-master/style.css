@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-position: top bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+    min-width: 340px;
+}
+
+main-card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+upper-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+headings h1{
+    color: hsl(300, 43%, 22%);
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+headings p{
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    margin-top: 20px;
+}
+ratings{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 25px;
+   width: 100%;
+}
+rating{
+    background-color: hsl(300, 24%, 96%);
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ratings rating p{
+    padding-bottom: 5px;
+    color: hsl(300, 43%, 22%);
+}
+star{
+    margin: 10px 0;
+    color: goldenrod;
+}
+
+
+/* lower section */
+
+lower-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 90%;
+}
+
+profile-card{
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+lower-section profile-card img{
+    width: 45px;
+    border-radius: 50%;
+    
+}
+lower-section profile-card .desc{
+   margin-top: 20px;
+}
+
+lower-section profile-card profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+lower-section profile-card profile name{
+    margin-left: 15px;
+}
+lower-section profile-card profile name p{
+    font-size: 14px;
+    line-height: 20px;
+}
+lower-section profile-card profile name tag{
+    color:  hsl(333, 80%, 67%);
+    font-size: 13px;
+}
+
+
+
+@media screen and (min-width: 800px){
+    body{
+        background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+        background-position: top bottom;
+    }
+    main-card{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    upper-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    upper-section headings{
+       width: 25%;
+       margin-top: 40px;
+       
+    }
+
+    upper-section ratings{
+        width: 670px;
+        
+    }
+    upper-section headings h1{
+        text-align: left;
+        padding-left: 0;
+        padding-right: 20px; 
+        font-size: 35px;
+    }
+    upper-section headings p{
+        text-align: left;
+        padding-right: 10px;
+    }
+    upper-section ratings rating{
+        width: 70%;
+    }
+    upper-section   .rating2{
+       margin-left: 80px;
+    }
+    upper-section .rating3{
+        margin-left: 160px;
+    }
+    lower-section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    lower-section profile-card{
+        margin-right: 20px;
+        margin-bottom: 40px;
+        
+        max-width: 300px;
+        padding: 20px;
+    }
+    lower-section .second{
+        margin-top: 20px;
+    }
+    lower-section .third{
+        margin-top: 40px;
+       
+    }
+}
